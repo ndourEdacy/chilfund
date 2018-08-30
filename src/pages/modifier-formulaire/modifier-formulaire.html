@@ -1,0 +1,69 @@
+<!--
+  Generated template for the EregistrerFomulairePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="white">
+    <button ion-button="" menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <img src="assets/imgs/childfund.jpg" alt="" class="logo" width="200px" height="50px" style="margin-left: 60%;">
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+
+    <ion-card-header text-center style="background-color: #008752,">
+     Editer Formulaire
+    </ion-card-header>
+  
+    <ion-card-content>
+        <ion-avatar style="margin: auto;">
+            <img src="{{imgProfil}}" alt="prendre une photo" width="100px" height="100px">
+            <button ion-button (click)="photo()" block>Prendre photo</button>
+          </ion-avatar>
+      <form>
+        <ion-item>
+          <ion-label>Nom:</ion-label>
+          <ion-input type="text" [(ngModel)]="enfant.nom" name="nom" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Prenom:</ion-label>
+          <ion-input [(ngModel)]="enfant.prenom" name="prenom" type="text" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>date de naissance:</ion-label>
+          <ion-input [(ngModel)]="enfant.datenaiss" name="datenaiss" type="text" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Lieu de naissance:</ion-label>
+          <ion-input [(ngModel)]="enfant.lieunaiss" name="prenom" type="text" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Sexe:</ion-label>
+            <ion-select [(ngModel)]="enfant.sexe" name="sexe">
+              <ion-option value="homme" aria-selected="true">Homme</ion-option>
+              <ion-option value="femme" >Femme</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Age:</ion-label>
+          <ion-input [(ngModel)]="enfant.age" name="age" type="number" type="text required"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Adress:</ion-label>
+          <ion-input [(ngModel)]="enfant.adress" name="adress" type="text" required></ion-input>
+        </ion-item>
+        <button ion-button (click)="modifier(enfant)" style="background-color: #008752;width: 100px;">Modifier</button>
+        <button ion-button (click)="envoyer()" type="submit" style="background-color: #008752;width: 100px;" >Envoyer</button>
+      </form>
+    </ion-card-content>
+  
+  </ion-card>
+</ion-content>

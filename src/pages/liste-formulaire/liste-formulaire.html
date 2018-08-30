@@ -1,0 +1,51 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="white">
+    <button ion-button="" menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <img src="assets/imgs/childfund.jpg" alt="" class="logo" width="200px" height="50px" style="margin-left: 60%;">
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding >
+
+<ion-grid style="margin-top: 20px;">
+    
+  <ion-row style="margin-top: 20px;">
+    
+    <ion-col col-10>
+      <button ion-button (click)="formEnfant()" style="background-color: #008752;width: 250px;">Enregistrer enfant de 0 a 5 ans</button>
+    </ion-col>
+    <ion-col col-1></ion-col>
+  </ion-row>
+  <ion-row>
+      
+      <ion-col col-10>
+        <button ion-button disabled style="background-color: #018752;width: 250px;">Enregistrer enfant de 6 a 14 ans</button>
+      </ion-col>
+      <ion-col col-1></ion-col>
+    </ion-row>
+    <ion-row>
+       
+        <ion-col col-10>
+          <button ion-button disabled style="background-color: #018752;width: 250px;">Enregistrer enfant de 15 a 24 ans</button>
+        </ion-col>
+        <ion-col col-1></ion-col>
+      </ion-row>
+      <ion-row>
+          
+          <ion-col col-10>
+            <button ion-button disabled style="background-color: #018752;width: 250px;">Formulaire 3</button>
+          </ion-col>
+          <ion-col col-1></ion-col>
+        </ion-row>
+</ion-grid>
+</ion-content>

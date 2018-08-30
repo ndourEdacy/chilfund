@@ -1,0 +1,56 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <button ion-button="" menuToggle="">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <img src="assets/imgs/childfund.jpg" alt="" class="logo" width="200px" height="50px" style="margin-left: 60%;">
+    </ion-navbar>
+  
+  </ion-header>
+  
+<ion-content padding >
+
+  <ion-grid style="margin-top: 20px;">
+      
+    <ion-row style="margin-top: 20px;">
+      
+      <ion-col col-10>
+        <button ion-button (click)="enregistrer()" style="background-color: #008752;width: 250px;">Enregistrer</button>
+      </ion-col>
+      <ion-col col-1></ion-col>
+    </ion-row>
+    <ion-row>
+        
+        <ion-col col-10>
+          <button ion-button (click)="envoyer()" style="background-color: #008752;width: 250px;">Envoyer</button>
+        </ion-col>
+        <ion-col col-1></ion-col>
+      </ion-row>
+      <ion-row>
+         
+          <ion-col col-10>
+            <button ion-button (click)="lister()" style="background-color: #008752;width: 250px;">liste des enregistrements</button>
+          </ion-col>
+          <ion-col col-1></ion-col>
+        </ion-row>
+        <ion-row>
+            
+            <ion-col col-10>
+              <button ion-button (click)="deconnecter()" style="background-color: #008752;width: 250px;">Deconnecter</button>
+            </ion-col>
+            <ion-col col-1></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-12>
+              <img src="assets/imgs/menu.jpg" alt="">
+            </ion-col>
+          </ion-row>
+  </ion-grid>
+</ion-content>
